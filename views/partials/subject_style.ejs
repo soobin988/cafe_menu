@@ -1,0 +1,29 @@
+<style>
+  :root { --ink: #172033; --muted: #687386; --line: #d9e0ea; --paper: #f5f7fb; --blue: #2457d6; --red: #c84646; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+  main { width: min(920px, calc(100% - 32px)); margin: 56px auto; }
+  .eyebrow { margin: 0 0 10px; color: var(--blue); font-size: 13px; font-weight: 700; letter-spacing: .08em; }
+  h1 { margin: 0; font-size: clamp(30px, 5vw, 52px); letter-spacing: -.05em; }
+  .intro { color: var(--muted); margin: 12px 0 30px; }
+  .panel { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: 0 12px 32px rgba(23,32,51,.06); }
+  form.inline { display: grid; grid-template-columns: 1fr 150px auto; gap: 10px; margin-bottom: 24px; }
+  input { width: 100%; border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; font: inherit; }
+  input:focus { outline: 3px solid rgba(36,87,214,.18); border-color: var(--blue); }
+  button, .button { display: inline-block; border: 0; border-radius: 10px; padding: 11px 15px; font: inherit; font-weight: 700; cursor: pointer; text-decoration: none; }
+  .primary { background: var(--blue); color: #fff; }
+  .quiet { color: var(--muted); background: #eef2f8; }
+  .danger { color: var(--red); background: #fff1f1; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 15px 10px; border-bottom: 1px solid #edf0f5; text-align: left; }
+  th { color: var(--muted); font-size: 13px; font-weight: 700; }
+  td:first-child, th:first-child { width: 80px; color: var(--muted); }
+  .score { font-weight: 800; }
+  .actions { display: flex; justify-content: flex-end; gap: 8px; }
+  .empty { color: var(--muted); padding: 28px 10px; text-align: center; }
+  .edit-panel { max-width: 520px; }
+  form.stack { display: grid; gap: 12px; }
+  .stack label { color: var(--muted); font-size: 13px; font-weight: 700; }
+  .stack .actions { margin-top: 8px; }
+  @media (max-width: 640px) { main { margin: 32px auto; } form.inline { grid-template-columns: 1fr 110px; } form.inline button { grid-column: 1 / -1; } th:first-child, td:first-child { width: 48px; } th:nth-child(3), td:nth-child(3) { text-align: right; } .actions { flex-wrap: wrap; } }
+</style>
